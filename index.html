@@ -1,0 +1,407 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Política de Privacidade | Pesquisa Satisfação Cliente</title>
+  <meta name="description" content="Política de Privacidade do aplicativo Pesquisa Satisfação Cliente, desenvolvido pela Cactum Systems." />
+  <style>
+    :root {
+      --bg: #020617;
+      --bg-2: #0f172a;
+      --card: rgba(255, 255, 255, 0.08);
+      --card-border: rgba(255, 255, 255, 0.16);
+      --text: #ffffff;
+      --muted: rgba(255, 255, 255, 0.68);
+      --soft: rgba(255, 255, 255, 0.46);
+      --blue: #38bdf8;
+      --green: #22c55e;
+      --yellow: #facc15;
+      --shadow: rgba(0, 0, 0, 0.35);
+    }
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      min-height: 100vh;
+      font-family: Inter, Arial, Helvetica, sans-serif;
+      background:
+        radial-gradient(circle at top, rgba(37, 99, 235, 0.35), transparent 38%),
+        linear-gradient(135deg, #0f172a, #1e293b 45%, #020617);
+      color: var(--text);
+      line-height: 1.65;
+    }
+
+    .page {
+      width: min(1120px, 100%);
+      margin: 0 auto;
+      padding: 34px 18px 46px;
+    }
+
+    .hero {
+      position: relative;
+      overflow: hidden;
+      border: 1px solid var(--card-border);
+      background: linear-gradient(145deg, rgba(255,255,255,.12), rgba(255,255,255,.04));
+      border-radius: 34px;
+      padding: 42px;
+      box-shadow: 0 24px 60px var(--shadow);
+    }
+
+    .hero::after {
+      content: "";
+      position: absolute;
+      right: -80px;
+      top: -80px;
+      width: 240px;
+      height: 240px;
+      border-radius: 50%;
+      background: rgba(34, 197, 94, 0.18);
+      filter: blur(4px);
+    }
+
+    .badge {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      padding: 8px 14px;
+      border-radius: 999px;
+      color: #bae6fd;
+      background: rgba(56, 189, 248, 0.12);
+      border: 1px solid rgba(56, 189, 248, 0.26);
+      font-size: 13px;
+      font-weight: 800;
+      margin-bottom: 20px;
+    }
+
+    .hero h1 {
+      font-size: clamp(34px, 5vw, 58px);
+      line-height: 1.02;
+      letter-spacing: -2px;
+      max-width: 780px;
+      margin-bottom: 16px;
+    }
+
+    .hero p {
+      max-width: 760px;
+      color: var(--muted);
+      font-size: clamp(15px, 2vw, 18px);
+      font-weight: 500;
+    }
+
+    .meta {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 12px;
+      margin-top: 26px;
+    }
+
+    .meta span {
+      padding: 10px 14px;
+      border-radius: 16px;
+      background: rgba(255,255,255,.08);
+      border: 1px solid rgba(255,255,255,.12);
+      color: rgba(255,255,255,.82);
+      font-size: 13px;
+      font-weight: 800;
+    }
+
+    .grid {
+      display: grid;
+      grid-template-columns: 280px 1fr;
+      gap: 22px;
+      margin-top: 24px;
+      align-items: start;
+    }
+
+    .summary,
+    .content {
+      border: 1px solid var(--card-border);
+      background: rgba(255,255,255,.075);
+      border-radius: 28px;
+      box-shadow: 0 18px 44px rgba(0,0,0,.24);
+      backdrop-filter: blur(12px);
+    }
+
+    .summary {
+      position: sticky;
+      top: 18px;
+      padding: 20px;
+    }
+
+    .summary h2 {
+      font-size: 16px;
+      margin-bottom: 12px;
+    }
+
+    .summary a {
+      display: block;
+      text-decoration: none;
+      color: var(--muted);
+      padding: 10px 12px;
+      border-radius: 14px;
+      font-size: 14px;
+      font-weight: 700;
+      transition: .2s ease;
+    }
+
+    .summary a:hover {
+      color: white;
+      background: rgba(255,255,255,.08);
+    }
+
+    .content {
+      padding: 30px;
+    }
+
+    section {
+      padding: 22px 0;
+      border-bottom: 1px solid rgba(255,255,255,.1);
+    }
+
+    section:last-child {
+      border-bottom: 0;
+    }
+
+    section h2 {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      font-size: clamp(22px, 2.8vw, 30px);
+      margin-bottom: 12px;
+      letter-spacing: -.7px;
+    }
+
+    .number {
+      width: 34px;
+      height: 34px;
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      border-radius: 12px;
+      background: rgba(56,189,248,.16);
+      color: #7dd3fc;
+      font-size: 14px;
+      font-weight: 900;
+      flex: none;
+    }
+
+    p, li {
+      color: var(--muted);
+      font-size: 15.5px;
+    }
+
+    ul {
+      margin-top: 10px;
+      padding-left: 20px;
+    }
+
+    li {
+      margin-bottom: 8px;
+    }
+
+    .highlight {
+      margin: 18px 0;
+      padding: 16px;
+      border-radius: 20px;
+      background: rgba(34, 197, 94, 0.10);
+      border: 1px solid rgba(34, 197, 94, 0.22);
+      color: rgba(255,255,255,.82);
+      font-weight: 700;
+    }
+
+    .contact-card {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 12px;
+      margin-top: 16px;
+    }
+
+    .contact-card a,
+    .contact-card div {
+      text-decoration: none;
+      color: white;
+      padding: 16px;
+      border-radius: 20px;
+      background: rgba(255,255,255,.08);
+      border: 1px solid rgba(255,255,255,.13);
+      transition: .2s ease;
+    }
+
+    .contact-card a:hover {
+      transform: translateY(-2px);
+      background: rgba(255,255,255,.12);
+    }
+
+    .label {
+      display: block;
+      color: var(--soft);
+      font-size: 12px;
+      font-weight: 800;
+      margin-bottom: 4px;
+      text-transform: uppercase;
+      letter-spacing: .5px;
+    }
+
+    footer {
+      text-align: center;
+      color: var(--soft);
+      font-size: 13px;
+      font-weight: 700;
+      padding: 26px 0 0;
+    }
+
+    @media (max-width: 860px) {
+      .hero {
+        padding: 30px 22px;
+        border-radius: 28px;
+      }
+
+      .grid {
+        grid-template-columns: 1fr;
+      }
+
+      .summary {
+        position: relative;
+        top: 0;
+      }
+
+      .content {
+        padding: 22px;
+      }
+
+      .contact-card {
+        grid-template-columns: 1fr;
+      }
+    }
+  </style>
+</head>
+<body>
+  <main class="page">
+    <header class="hero">
+      <div class="badge">🔒 Privacidade e transparência</div>
+      <h1>Política de Privacidade</h1>
+      <p>
+        Esta Política de Privacidade explica como o aplicativo <strong>Pesquisa Satisfação Cliente</strong>, desenvolvido pela
+        <strong>Cactum Systems</strong>, trata informações e protege a privacidade dos usuários.
+      </p>
+      <div class="meta">
+        <span>Aplicativo: Pesquisa Satisfação Cliente</span>
+        <span>Desenvolvedor: Cactum Systems</span>
+        <span>Última atualização: 2026</span>
+      </div>
+    </header>
+
+    <div class="grid">
+      <aside class="summary">
+        <h2>Sumário</h2>
+        <a href="#coleta">1. Coleta de informações</a>
+        <a href="#camera">2. Uso da câmera</a>
+        <a href="#internet">3. Uso da internet</a>
+        <a href="#armazenamento">4. Armazenamento de dados</a>
+        <a href="#compartilhamento">5. Compartilhamento</a>
+        <a href="#seguranca">6. Segurança</a>
+        <a href="#alteracoes">7. Alterações</a>
+        <a href="#contato">8. Contato</a>
+      </aside>
+
+      <article class="content">
+        <section id="coleta">
+          <h2><span class="number">1</span>Coleta de informações</h2>
+          <p>O aplicativo não coleta dados pessoais sensíveis, não exige login e não solicita cadastro do usuário.</p>
+          <ul>
+            <li>Não coletamos nome, CPF, endereço ou dados financeiros.</li>
+            <li>Não vendemos informações dos usuários.</li>
+            <li>Não compartilhamos informações pessoais com terceiros.</li>
+          </ul>
+          <div class="highlight">
+            As informações registradas no aplicativo são relacionadas somente às respostas da pesquisa de satisfação, como nota, descrição e emoji selecionado.
+          </div>
+        </section>
+
+        <section id="camera">
+          <h2><span class="number">2</span>Uso da câmera</h2>
+          <p>
+            O aplicativo pode solicitar acesso à câmera exclusivamente para permitir que o responsável pela configuração capture uma imagem para definir a logomarca da empresa.
+          </p>
+          <ul>
+            <li>A câmera não é usada para identificar pessoas.</li>
+            <li>A câmera não é usada para monitoramento.</li>
+            <li>A imagem escolhida é usada apenas como logomarca dentro do aplicativo.</li>
+          </ul>
+        </section>
+
+        <section id="internet">
+          <h2><span class="number">3</span>Uso da internet</h2>
+          <p>
+            O aplicativo pode utilizar conexão com a internet para funcionalidades futuras, atualizações, suporte ou possíveis integrações com sistemas e APIs.
+          </p>
+          <p>Nenhuma informação pessoal sensível é transmitida sem finalidade legítima relacionada ao funcionamento do aplicativo.</p>
+        </section>
+
+        <section id="armazenamento">
+          <h2><span class="number">4</span>Armazenamento de dados</h2>
+          <p>
+            Os dados da pesquisa são armazenados localmente no dispositivo onde o aplicativo está instalado.
+          </p>
+          <ul>
+            <li>As respostas podem ser consultadas no próprio dispositivo.</li>
+            <li>O usuário pode limpar os dados salvos quando desejar.</li>
+            <li>Dados locais podem ser perdidos se o aplicativo for desinstalado ou se os dados do app forem apagados.</li>
+          </ul>
+        </section>
+
+        <section id="compartilhamento">
+          <h2><span class="number">5</span>Compartilhamento de dados</h2>
+          <p>A Cactum Systems não vende, aluga ou compartilha dados pessoais dos usuários com terceiros.</p>
+          <p>As informações registradas são utilizadas apenas para fins de operação e análise da satisfação dos clientes dentro do próprio aplicativo.</p>
+        </section>
+
+        <section id="seguranca">
+          <h2><span class="number">6</span>Segurança</h2>
+          <p>
+            Aplicamos boas práticas de desenvolvimento para preservar a segurança das informações armazenadas localmente no dispositivo.
+          </p>
+          <p>Mesmo assim, nenhum sistema é totalmente imune a falhas, por isso recomendamos manter o dispositivo protegido e atualizado.</p>
+        </section>
+
+        <section id="alteracoes">
+          <h2><span class="number">7</span>Alterações nesta política</h2>
+          <p>
+            Esta Política de Privacidade poderá ser atualizada para refletir melhorias no aplicativo, mudanças legais ou novas funcionalidades.
+          </p>
+          <p>A versão mais recente estará sempre disponível nesta página.</p>
+        </section>
+
+        <section id="contato">
+          <h2><span class="number">8</span>Contato</h2>
+          <p>Em caso de dúvidas sobre esta Política de Privacidade ou sobre o aplicativo, entre em contato com a Cactum Systems.</p>
+
+          <div class="contact-card">
+            <a href="mailto:contato@cactumsys.com.br">
+              <span class="label">E-mail</span>
+              contato@cactumsys.com.br
+            </a>
+            <a href="https://www.cactumsys.com.br" target="_blank" rel="noopener">
+              <span class="label">Site</span>
+              www.cactumsys.com.br
+            </a>
+            <a href="https://wa.me/5589994259063" target="_blank" rel="noopener">
+              <span class="label">WhatsApp</span>
+              89 99425-9063
+            </a>
+          </div>
+        </section>
+      </article>
+    </div>
+
+    <footer>
+      © 2026 Cactum Systems. Todos os direitos reservados.
+    </footer>
+  </main>
+</body>
+</html>
